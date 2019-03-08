@@ -87,7 +87,7 @@ public class CallableTest {
     }
 }
 ```
-##### * 6.4、他们3者关系如下
+#####* 6.4、他们3者关系如下
 
 | Runable接口 | Thread类 | Callable接口 |
 | ------ | ------ | ------ |
