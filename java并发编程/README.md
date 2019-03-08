@@ -64,9 +64,9 @@ public class ThreadTest extends Thread {
 }
 
 ```
-   上述代码创建一个ThreadTest类，在main函数中创建ThreadTest的实例，并调用start方法启动线程。注意当然调用start方法后，线程并没有马上执行，而是处于就绪状态，这个就绪状态指线程除了获取CPU资源外已经获取了其他资源，等待获取CPU资源后才真正是运行状态，当然运行完run方法后，线程终止结束。
-   ---
-   继承的好处是可以在run方法中直接可以使用this关键字获取当前线程相关信息，而不用在使用Thread.currentThread()法，但坏处是，我们都知道java是单继承，这样做不利于扩展。
+   1、上述代码创建一个ThreadTest类，在main函数中创建ThreadTest的实例，并调用start方法启动线程。注意当然调用start方法后，线程并没有马上执行，而是处于就绪状态，这个就绪状态指线程除了获取CPU资源外已经获取了其他资源，等待获取CPU资源后才真正是运行状态，当然运行完run方法后，线程终止结束。
+
+   2、继承的好处是可以在run方法中直接可以使用this关键字获取当前线程相关信息，而不用在使用Thread.currentThread()法，但坏处是，我们都知道java是单继承，这样做不利于扩展。
 
 * **6.3、通过实现Callable接口，如下**
 ```
@@ -95,7 +95,7 @@ public class CallableTest {
    1、上述代码是通过FutureTask方式运行线程。
    2、它比Runable和Thread的优点是它可以有返回值，缺点是在使用FutureTask的get方法获取返回值是它是阻塞的。
    3、call接口可以抛出异常，而Runable必须通过setUncaughtExceptionHandler()设置异常，才能在主线程中捕获到子线程的异常。
----
+
    
 
 
