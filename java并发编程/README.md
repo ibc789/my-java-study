@@ -88,7 +88,8 @@ public class CallableTest {
 }
 ```
 * 6.4、他们3者的区别如下图
+
 | Runable | Thread | Callable |
 | ------ | ------ | ------ |
-| [Runable接口](https://github.com/ibc789/my-java-study/blob/master/img/thread/thread-2.jpg "Runable接口") | [Thread类](https://github.com/ibc789/my-java-study/blob/master/img/thread/thread-3.jpg "Thread类") | [Callable接口](https://github.com/ibc789/my-java-study/blob/master/img/thread/thread-4.jpg "Callable接口") |
+| ![Runable接口](https://github.com/ibc789/my-java-study/blob/master/img/thread/thread-2.jpg "Runable接口") | ![Thread类](https://github.com/ibc789/my-java-study/blob/master/img/thread/thread-3.jpg "Thread类") | ![Callable接口](https://github.com/ibc789/my-java-study/blob/master/img/thread/thread-4.jpg "Callable接口") |
 
