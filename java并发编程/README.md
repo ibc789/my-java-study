@@ -29,7 +29,7 @@
 
 #### 6、java线程创建的3种方式 实现Runable接口的run方法、继承Thread类重写run方法、实现Callable接口的call方法
 * **6.1、通过实现Runable接口，如下**
-```
+```java
 public class RunableTest {
 
    public static class RunableTask implements Runnable{
@@ -48,7 +48,7 @@ public class RunableTest {
    上述代码实现Runable接口的run方法，这样做的好处是RunableTask可以在继承其他类利于扩展，坏处是不能用this关键字获取当前线程相关信息，必须通过Thread.currentThread()方法来获取。
 
 * **6.2、通过继承Thread类，如下**
-```
+```java
 public class ThreadTest extends Thread {
 
     public static class ThreadTask extends Thread{
@@ -69,7 +69,7 @@ public class ThreadTest extends Thread {
    2、继承的好处是可以在run方法中直接可以使用this关键字获取当前线程相关信息，而不用在使用Thread.currentThread()法，但坏处是，我们都知道java是单继承，这样做不利于扩展。
 
 * **6.3、通过实现Callable接口，如下**
-```
+```java
 public class CallableTest {
 
    public static class CallableTask implements Callable<String>{
@@ -98,8 +98,8 @@ public class CallableTest {
 
    3、call接口可以抛出异常，而Runable必须通过setUncaughtExceptionHandler()设置异常，才能在主线程中捕获到子线程的异常。
 
-   4、调用start方法后再次调用报IllegalThreadStateException异常，如下源码蓝色所示
-   ```
+   4、调用start方法后再次调用报IllegalThreadStateException异常，如下源码所示
+   ```java
     public synchronized void start() {
         /**
          * This method is not invoked for the main method thread or "system"
@@ -109,7 +109,7 @@ public class CallableTest {
          * A zero status value corresponds to state "NEW".
          */
         if (threadStatus != 0)
-            <font color="#avdcdet">throw new IllegalThreadStateException();</font>
+            hrow new IllegalThreadStateException();
 
         /* Notify the group that this thread is about to be started
          * so that it can be added to the group's list of threads
