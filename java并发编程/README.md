@@ -154,4 +154,5 @@ public class CallableTest {
 
 
    1、如上图所式，线程有5中状态 新建状态(NEW)、就绪状态(RUNNABLE)、运行状态(RUNNING)、阻塞状态(BLOCKED)、死亡(DADE)
+   
    2、NEW新建状态，是创建线程未启动状态，
