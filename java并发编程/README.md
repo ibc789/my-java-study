@@ -28,19 +28,63 @@
 
 
 #### 6、java线程创建的3种方式 Runable、Thread、Call
-* 1、通过实现Runable接口，如下
+* 6.1、通过实现Runable接口，如下
 ```
-public class ThreadTest {
-    public static class RunableTest implements Runnable{
+public class RunableTest {
+
+   public static class RunableTask implements Runnable{
+       @Override
+       public void run() {
+           System.out.println("hello world");
+       }
+   }
+    public static void main(String[] args) {
+        RunableTask RunableTask = new RunableTask();
+        Thread thread = new Thread(RunableTask);
+        thread.start();
+    }
+}
+```
+
+* 6.2、通过继承Thread类，如下
+```
+public class ThreadTest extends Thread {
+
+    public static class ThreadTask extends Thread{
         @Override
         public void run() {
             System.out.println("hello world");
         }
     }
     public static void main(String[] args) {
-        RunableTest runableTest = new RunableTest();
-        Thread thread = new Thread(runableTest);
-        thread.start();
+        ThreadTask threadTask = new ThreadTask();
+        threadTask.start();
+    }
+}
+
+```
+* 6.3、通过实现Callable接口，如下
+```
+public class CallableTest {
+
+   public static class CallableTask implements Callable<String>{
+       @Override
+       public String call() {
+           return "hello world";
+       }
+   }
+
+    public static void main(String[] args) {
+       try {
+           CallableTask callableTask = new CallableTask();
+           FutureTask<String> futureTask = new FutureTask<>(callableTask);
+           new Thread(futureTask).start();
+           String res = futureTask.get();
+           System.out.println(res);
+       }catch (Exception e){
+           e.printStackTrace();
+       }
     }
 }
 ```
+
