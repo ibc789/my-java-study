@@ -27,7 +27,7 @@
 
 
 
-#### 6、java线程创建的3种方式 Runable、Thread、Call
+#### 6、java线程创建的3种方式 实现Runable接口重写run方法、继承Thread类重写run方法、实现Callable接口重写call方法
 * 6.1、通过实现Runable接口，如下
 ```
 public class RunableTest {
@@ -87,4 +87,8 @@ public class CallableTest {
     }
 }
 ```
+* 6.4、他们3者的区别如下图
+| Runable | Thread | Callable |
+| ------ | ------ | ------ |
+| [Runable接口](https://github.com/ibc789/my-java-study/blob/master/img/thread/thread-2.jpg "Runable接口") | [Thread类](https://github.com/ibc789/my-java-study/blob/master/img/thread/thread-3.jpg "Thread类") | [Callable接口](https://github.com/ibc789/my-java-study/blob/master/img/thread/thread-4.jpg "Callable接口") |
 
