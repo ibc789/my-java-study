@@ -98,7 +98,7 @@ public class CallableTest {
 
    3、call接口可以抛出异常，而Runable必须通过setUncaughtExceptionHandler()设置异常，才能在主线程中捕获到子线程的异常。
 
-   4、调用start方法后再次调用报IllegalThreadStateException异常，如下源码所示
+   4、调用start方法后再次调用报IllegalThreadStateException异常，如下源码蓝色所示
    ```
     public synchronized void start() {
         /**
@@ -109,7 +109,7 @@ public class CallableTest {
          * A zero status value corresponds to state "NEW".
          */
         if (threadStatus != 0)
-            throw new IllegalThreadStateException();
+            $\color{blue}{throw new IllegalThreadStateException();}$
 
         /* Notify the group that this thread is about to be started
          * so that it can be added to the group's list of threads
