@@ -27,7 +27,7 @@
 
 
 
-#### 6、java线程创建的3种方式 实现Runable接口重写run方法、继承Thread类重写run方法、实现Callable接口重写call方法
+#### 6、java线程创建的3种方式 实现Runable接口的run方法、继承Thread类重写run方法、实现Callable接口的call方法
 * **6.1、通过实现Runable接口，如下**
 ```
 public class RunableTest {
