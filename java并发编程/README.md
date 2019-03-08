@@ -93,7 +93,9 @@ public class CallableTest {
 }
 ```
    1、上述代码是通过FutureTask方式运行线程。
-   2、它比Runable和Thread的优点是它可以有返回值，缺点是在使用FutureTask的get方法获取返回值是它是阻塞的。
+
+   2、它比Runable和Thread的优点是它可以有返回值，缺点是在使用FutureTask的get方法获取返回值时它是阻塞的。
+
    3、call接口可以抛出异常，而Runable必须通过setUncaughtExceptionHandler()设置异常，才能在主线程中捕获到子线程的异常。
 
    
