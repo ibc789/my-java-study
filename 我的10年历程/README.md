@@ -1,7 +1,6 @@
 ---
 title: "10年历程总结"
 author: "ibc789"
-cover: "/images/cover.jpg"
 date: 2019-03-07T13:39:15+08:00
 draft: true
 ---
