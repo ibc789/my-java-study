@@ -28,7 +28,7 @@
 
 
 #### 6、java线程创建的3种方式 实现Runable接口重写run方法、继承Thread类重写run方法、实现Callable接口重写call方法
-##### * 6.1、通过实现Runable接口，如下
+* **6.1、通过实现Runable接口，如下**
 ```
 public class RunableTest {
 
@@ -46,7 +46,7 @@ public class RunableTest {
 }
 ```
 
-##### * 6.2、通过继承Thread类，如下
+* **6.2、通过继承Thread类，如下**
 ```
 public class ThreadTest extends Thread {
 
@@ -63,7 +63,7 @@ public class ThreadTest extends Thread {
 }
 
 ```
-##### * 6.3、通过实现Callable接口，如下
+* **6.3、通过实现Callable接口，如下**
 ```
 public class CallableTest {
 
@@ -87,7 +87,7 @@ public class CallableTest {
     }
 }
 ```
-#####* 6.4、他们3者关系如下
+* **6.4、他们3者关系如下**
 
 | Runable接口 | Thread类 | Callable接口 |
 | ------ | ------ | ------ |
