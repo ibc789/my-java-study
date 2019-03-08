@@ -29,7 +29,7 @@
 
 #### 6、java线程创建的3种方式 Runable、Thread、Call
 * 1、通过实现Runable接口，如下
-(```)
+```
 public class ThreadTest {
     public static class RunableTest implements Runnable{
         @Override
@@ -43,4 +43,4 @@ public class ThreadTest {
         thread.start();
     }
 }
-(```)
+```
