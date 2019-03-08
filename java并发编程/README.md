@@ -148,7 +148,7 @@ public class CallableTest {
 
 * **7.1、java线程的生命周期如下图所属(图片来源于网络和书籍)**
 
-| 来源于网络 | 来源于阿里巴巴马出高效 |
+| 来源于网络 | 来源于阿里巴巴码出高效 |
 | ------ | ------ | 
 | ![生命周期](https://github.com/ibc789/my-java-study/blob/master/img/thread/thread-5.jpg "生命周期") | ![生命周期](https://github.com/ibc789/my-java-study/blob/master/img/thread/thread-6.jpg "生命周期") | 
 
