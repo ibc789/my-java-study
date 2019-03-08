@@ -7,7 +7,7 @@
 
 #### 2、什么是并发和并行
 * 并行：指两个或多个事件在同一时间点发生。列如我们在学生时代，排队打饭，有多个窗口可以同时排队打饭。这就是并行。
-* 并发：指单位时间内，处理事情的能力。列如我们在排队打饭时，单个窗口5分钟内可以能处理10个人打饭，这就叫做并发。
+* 并发：指单位时间内，处理事情的能力。列如我们在排队打饭时，单个窗口5分钟内可以处理10个人打饭，这就叫做并发。
 
 #### 3、什么是同步和异步
 
@@ -27,4 +27,20 @@
 
 
 
-#### 3、线程之间的协作和共享
+#### 6、java线程创建的3种方式 Runable、Thread、Call
+* 1、通过实现Runable接口，如下
+(```)
+public class ThreadTest {
+    public static class RunableTest implements Runnable{
+        @Override
+        public void run() {
+            System.out.println("hello world");
+        }
+    }
+    public static void main(String[] args) {
+        RunableTest runableTest = new RunableTest();
+        Thread thread = new Thread(runableTest);
+        thread.start();
+    }
+}
+(```)
