@@ -151,3 +151,5 @@ public class CallableTest {
 | 来源于网络 | 来源于阿里巴巴马出高效 |
 | ------ | ------ | 
 | ![生命周期](https://github.com/ibc789/my-java-study/blob/master/img/thread/thread-5.jpg "生命周期") | ![生命周期](https://github.com/ibc789/my-java-study/blob/master/img/thread/thread-6.jpg "生命周期") | 
+   1、如上图所式，线程有5中状态 新建状态(NEW)、就绪状态(RUNNABLE)、运行状态(RUNNING)、阻塞状态(BLOCKED)、死亡(DADE)
+   2、NEW新建状态，是创建线程未启动状态，
