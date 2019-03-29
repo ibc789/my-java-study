@@ -109,7 +109,7 @@ public class CallableTest {
          * A zero status value corresponds to state "NEW".
          */
         if (threadStatus != 0)
-            hrow new IllegalThreadStateException();
+            throw new IllegalThreadStateException();
 
         /* Notify the group that this thread is about to be started
          * so that it can be added to the group's list of threads
