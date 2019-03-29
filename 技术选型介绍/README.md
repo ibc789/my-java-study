@@ -9,4 +9,4 @@
 
 5. **Dubbox**:对于Dubbox或者Spring Cloud这种RPC框架，服务发现是自带机制，不是什么难题。但是对于没有服务治理或者RESTful的PHP服务而言，如何将现有的服务治理框架融合进去，达成跨语言、跨平台服务治理，便是一个很大的问题、
 
-6. Service Mesh：根据集群状态动态调整负载均衡策略和应用上线下是Service Mesh的一个技术特点，另外Service Mesh还提供了夸语言、夸通信模式的服务自发现技术
+6. **Service Mesh**：根据集群状态动态调整负载均衡策略和应用上线下是Service Mesh的一个技术特点，另外Service Mesh还提供了夸语言、夸通信模式的服务自发现技术
