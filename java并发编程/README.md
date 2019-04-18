@@ -27,7 +27,15 @@
 
 
 
-#### 6、java线程创建的3种方式 实现Runable接口的run方法、继承Thread类重写run方法、实现Callable接口的call方法
+#### 6、在JDK中已经明确说明了只有2中方式创建线程如下,第一种就是实现Runable接口的run方法、第二种就是继承Thread类重写run方法，另外一种大多数人可能会认为是第3种方式实现Callable接口，
+```java
+  There are two ways to create a new thread of execution. One is to
+  declare a class to be a subclass of <code>Thread</code>. This
+  subclass should override the <code>run</code> method of class
+  <code>Thread</code>. An instance of the subclass can then be
+  allocated and started. For example, a thread that computes primes
+  larger than a stated value could be written as follows:
+```
 * **6.1、通过实现Runable接口，如下**
 ```java
 public class RunableTest {
